@@ -16,7 +16,6 @@ void get_last_local_minimum(int** matrix, int n, int m, int* ii, int* jj) {
     }
 
     for (int i = 0; i < n; ++i) {
-        if (matrix[i] == nullptr) continue;
         for (int j = 0; j < m; ++j) {
             bool isLocalMin = true;
             int current = matrix[i][j];
